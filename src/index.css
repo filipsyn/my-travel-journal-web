@@ -1,0 +1,19 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+
+/* Nav component */
+nav {
+    height: 55px;
+    background-color: #F55A5A;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.nav--title {
+    color: white;
+    text-transform: lowercase;
+}
