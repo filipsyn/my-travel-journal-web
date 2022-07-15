@@ -18,3 +18,20 @@ nav {
     color: white;
     text-transform: lowercase;
 }
+
+/* CardList component */
+
+
+/* Card component */
+
+.card {
+    margin: 15px;
+    display: flex;
+    gap: 20px;
+}
+
+.card--photo {
+    width: 125px;
+    height: 168px;
+    border-radius: 5px;
+}
