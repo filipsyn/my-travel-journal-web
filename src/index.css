@@ -35,3 +35,22 @@ nav {
     height: 168px;
     border-radius: 5px;
 }
+
+.card--location {
+    display:flex;
+    gap: 20px;
+    align-items: baseline;
+}
+
+.card--location-name {
+    display: flex;
+    gap: 6px;
+    font-size: 10px;
+    line-height: 12px;
+    letter-spacing: 0.17em;
+    text-transform: uppercase;
+}
+
+.card--location-pin {
+    width: 7px;
+}

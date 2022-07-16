@@ -6,11 +6,13 @@ export default function Card() {
         <div className="card">
             <img className="card--photo" src={mountFuji} alt=""/>
             <div className="card--details">
-                <span className="card--location">
-                    <img src={pin} alt="Location pin icon"/>
-                    Location
-                </span>
-                <span className="card--maps-link"><a href="#">View on Google Maps</a></span>
+                <div className="card--location">
+                    <span className="card--location-name">
+                        <img className="card--location-pin" src={pin} alt="Location pin icon"/>
+                        Location
+                    </span>
+                    <span className="card--location-link"><a href="#">View on Google Maps</a></span>
+                </div>
                 <h2 className="card--title">Title</h2>
                 <span className="card--travel-duration">26.4.2022 - 1.5.2022</span>
                 <p className="card--description">
