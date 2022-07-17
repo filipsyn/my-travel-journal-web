@@ -11,7 +11,7 @@ export default function Card() {
                         <img className="card--location-pin" src={pin} alt="Location pin icon"/>
                         Location
                     </span>
-                    <span className="card--location-link"><a href="#">View on Google Maps</a></span>
+                    <a className="card--location-link" href="#">View on Google Maps</a>
                 </div>
                 <h2 className="card--title">Title</h2>
                 <span className="card--travel-duration">26.4.2022 - 1.5.2022</span>

@@ -39,7 +39,8 @@ nav {
 .card--location {
     display:flex;
     gap: 20px;
-    align-items: baseline;
+    align-items: flex-end;
+    margin-bottom: 6px;
 }
 
 .card--location-name {
@@ -49,8 +50,39 @@ nav {
     line-height: 12px;
     letter-spacing: 0.17em;
     text-transform: uppercase;
+    color: #2B283A;
 }
 
 .card--location-pin {
     width: 7px;
+}
+
+.card--location-link {
+    font-size: 10px;
+    line-height: 12px;
+    text-decoration-line: underline;
+    color: #918E9B;
+}
+
+.card--title {
+    font-weight: 700;
+    font-size: 25px;
+    line-height: 30px;
+    color: #2B283A;
+    margin-bottom: 10px;
+}
+
+.card--travel-duration {
+    font-weight: 700;
+    font-size: 10px;
+    line-height: 12px;
+    color: #2B283A;
+    margin-bottom: 8px;
+    display:block;
+}
+
+.card--description {
+    font-size: 10px;
+    line-height: 150%;
+    max-width: 325px;
 }
