@@ -1,24 +1,21 @@
 import pin from "../assets/location-pin.svg"
-import mountFuji from "../assets/mount-fuji.jpeg"
 
-export default function Card() {
+export default function Card(props) {
     return (
         <div className="card">
-            <img className="card--photo" src={mountFuji} alt=""/>
+            <img className="card--photo" src={props.photoUrl} alt=""/>
             <div className="card--details">
                 <div className="card--location">
                     <span className="card--location-name">
                         <img className="card--location-pin" src={pin} alt="Location pin icon"/>
-                        Location
+                        {props.location.name}
                     </span>
-                    <a className="card--location-link" href="#">View on Google Maps</a>
+                    <a className="card--location-link" href={props.location.mapsLink}>View on Google Maps</a>
                 </div>
-                <h2 className="card--title">Title</h2>
-                <span className="card--travel-duration">26.4.2022 - 1.5.2022</span>
+                <h2 className="card--title">{props.title}</h2>
+                <span className="card--travel-duration">{`${props.date.start} - ${props.date.end}`}</span>
                 <p className="card--description">
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam at commodi cum cumque, doloribus
-                    expedita nesciunt officia possimus praesentium, quae rem repudiandae sint, voluptate. Labore optio
-                    placeat reprehenderit similique voluptatibus?
+                    {props.description}
                 </p>
             </div>
         </div>
