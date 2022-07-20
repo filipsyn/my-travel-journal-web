@@ -14,6 +14,7 @@ to the existing design
 
 ## 🧰 Used technologies
 - **Frontend** - HTML, CSS, React
+- **Build**, **Project setup** - Vite
 
 
 ## 🎉 Features
